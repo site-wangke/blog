@@ -20,7 +20,7 @@
 
 <p translation-result="on">Angular 的 9.0.0 版本发布了！这是一个跨平台的主版本，包括框架、Angular Material 和 CLI。这个版本默认会把应用程序切换到 <a href="https://angular.cn/guide/ivy" target="_blank">Ivy</a> 编译器和运行时，并改进了组件测试方法。</p><p translation-origin="off">The 9.0.0 release of Angular is here! This is a major release that spans the entire platform, including the framework, Angular Material, and the CLI. This release switches applications to the <a href="https://angular.io/guide/ivy" target="_blank">Ivy</a> compiler and runtime by default, and introduces improved ways of testing components.</p>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ivy.png" alt="Ivy"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ivy.jpg" alt="Ivy"></p>
 <p translation-result="on">这是 Angular 在过去 3 年中所做的最重大更新之一，我们很高兴能通过各种方式帮助开发人员构建出更好的应用并为 Angular 生态系统做出贡献。</p><p translation-origin="off">This is one of the biggest updates to Angular we’ve made in the past 3 years, and we’re excited for all of the ways it empowers developers to build better applications and contribute to the Angular ecosystem.</p>
 
 <h1 id="how-to-update-to-version-9" translation-result="on">如何更新到版本 9</h1><h1 translation-origin="off">How to update to version 9</h1>
@@ -86,7 +86,7 @@
 </ul>
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/bundle-size.png" alt="打包尺寸"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/bundle-size.jpg" alt="打包尺寸"></p>
 <figcaption>小型应用程序的发布包体积可减少约 30％，大型应用程序的发布包体积可减少 25–40％，而中型应用程序的发布包受益最少。</figcaption>
 
 </figure>
@@ -118,28 +118,28 @@
 </ul>
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/applyChanges.png" alt="applyChanges"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/applyChanges.jpg" alt="applyChanges"></p>
 </figure>
 
 <p translation-result="on">Ivy 还改进了用于调试问题的调用栈跟踪，比如 <code>ExpressionChangedAfterItHasBeenCheckedError</code> 。以前堆栈跟踪可能没多少帮助：</p><p translation-origin="off">Ivy also improves the stack trace for debugging issues such as the <code>ExpressionChangedAfterItHasBeenCheckedError</code>. Previously the stack trace could be unhelpful:</p>
 
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ExpressionChangedAfterItHasBeenCheckedError.png" alt="ExpressionChangedAfterItHasBeenCheckedError"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ExpressionChangedAfterItHasBeenCheckedError.jpg" alt="ExpressionChangedAfterItHasBeenCheckedError"></p>
 </figure>
 
 <p translation-result="on">在 Ivy 中，你可以看到一个更实用的调用栈跟踪，它允许你直接从一个已更改的表达式跳转到模板指令。</p><p translation-origin="off">With Ivy, you see a more useful stack trace that allows you to jump directly to the template instruction with the expression that has changed.</p>
 
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/stack-trace.png" alt="Stack Trace"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/stack-trace.jpg" alt="Stack Trace"></p>
 </figure>
 
 <p translation-result="on">例如，如果在上面的堆栈跟踪中单击 <code>AppComponent_Template</code>，就可以在生成的代码中看到抛出该错误的具体代码行：</p><p translation-origin="off">For example, if you click on <code>AppComponent_Template</code> in the stack trace above, you can see the specific line in the generated code where the error is being thrown:</p>
 
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/AppComponent_Template.png" alt="AppComponent Template"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/AppComponent_Template.jpg" alt="AppComponent Template"></p>
 </figure>
 
 <p translation-result="on">如果愿意，你还可以进入任何一个框架指令，来了解框架是如何创建或更新你的组件的。</p><p translation-origin="off">If you’re so inclined, you can also step into any of these framework instructions to walk through how the framework creates or updates your components.</p>
@@ -200,10 +200,10 @@
 
 <p translation-result="on">在版本 8 或 View Engine 中，典型的编译器错误如下所示：</p><p translation-origin="off">In version 8 or View Engine, a typical compiler error would look like the following:</p>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ViewEngine.png" alt="View Engine"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/ViewEngine.jpg" alt="View Engine"></p>
 <p translation-result="on">在使用 Ivy 的 9 版本中，同样的错误如下：</p><p translation-origin="off">In version 9 with Ivy, the same error looks like:</p>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/IvyEngine.png" alt="Ivy"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/IvyEngine.jpg" alt="Ivy"></p>
 <h1 id="improved-build-times-enabling-ahead-of-time-compiler-on-by-default" translation-result="on">缩短了构建时间，默认启用了预先编译器（AOT）</h1><h1 translation-origin="off">Improved build times, enabling Ahead-of-Time compiler on by default</h1>
 
 <p translation-result="on">感谢 Ivy 的新架构，我们对编译器的性能做了很大的改进。</p><p translation-origin="off">Thanks to Ivy’s new architecture, we’ve made significant improvements to the compiler’s performance.</p>
@@ -303,7 +303,7 @@
 
 <figure>
 
-<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/language-service.png" alt="Language Service"></p>
+<p><img src="/assets/content/articles/ng-blog/./.Angular-9-release_images/language-service.jpg" alt="Language Service"></p>
 <figcaption>转到定义（Go to definition）和改进的语言服务演示</figcaption>
 
 </figure>
@@ -340,6 +340,6 @@
 
 </div></app-markdown-viewer></app-article-show><!----></mat-sidenav-content><!----></mat-sidenav-container></app-layout-nav></app-article-layout><!----></app-root>
 <script src="/assets/js/translator.js" async=""></script>
-<script src="runtime-es2015.0d18029cc48539ed2f99.js" type="module"></script><script src="runtime-es5.0d18029cc48539ed2f99.js" nomodule="" defer=""></script><script src="polyfills-es5.8f0107a404b59e240699.js" nomodule="" defer=""></script><script src="polyfills-es2015.22a1f1f7969dd42ba492.js" type="module"></script><script src="main-es2015.ba0720c948cfc9f776e1.js" type="module"></script><script src="main-es5.ba0720c948cfc9f776e1.js" nomodule="" defer=""></script>
+<script src="runtime-es2015.0d18029cc48539ed2f99.js" type="module"></script><script src="runtime-es5.0d18029cc48539ed2f99.js" nomodule="" defer=""></script><script src="polyfills-es5.8f0107a404b59e240699.js" nomodule="" defer=""></script><script src="polyfills-es2015.22a1f1f7969dd42ba492.js" type="module"></script><script src="main-es2015.1e683f10ec7f3d09d56d.js" type="module"></script><script src="main-es5.1e683f10ec7f3d09d56d.js" nomodule="" defer=""></script>
 
 </body></html>
